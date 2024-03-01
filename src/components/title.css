@@ -44,7 +44,7 @@
     left: 0;
     width: 100%;
     border-bottom: 2px solid white;
-    animation: border-grow 2s forwards;
+    animation: border-grow 3s ease forwards;
   }
   
   @keyframes border-grow {

@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden outside the viewport */
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  transition: right 0.3s ease; /* Animation duration and easing */
+}
+
+.navbar.open {
+  right: 0; /* Slide into view when open */
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+.navbar-content {
+  padding-top: 50px; /* Adjust as needed */
+}
+
+.navbar-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-content ul li {
+  padding: 10px;
+  color: white;
+}
+
+/* Add additional styling as needed */
