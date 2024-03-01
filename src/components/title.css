@@ -1,0 +1,62 @@
+/* Title.css */
+.title-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 60px;
+    margin-top: 40px;
+  }
+  
+  .title-container h1,
+  .title-container h2 {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .title-container h1 {
+    font-size: 60px;
+    
+    margin-top: 60px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  .title-container .subtitle {
+    opacity: 0; /* Initially hide the subtitle */
+    transition: opacity 3s ease; /* Adjust timing here */
+    color: white;
+    font-size: 40px;
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  /* Adjust the hover effect to not include hover */
+  .title-container .subtitle.show {
+    opacity: 1;
+  }
+  
+  .title-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust as needed */
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+    animation: border-grow 2s forwards;
+  }
+  
+  @keyframes border-grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+
