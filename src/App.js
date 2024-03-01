@@ -1,6 +1,6 @@
+// App.js
 import React from "react";
 import "./App.css"; // Import your global styles
-
 import backgroundImage from "./assets/background.jpg"; // Import your background image
 import AboutUs from "./components/AboutUs";
 import Title from "./components/Title";

@@ -19,10 +19,10 @@ const NavBar = () => {
       </div>
       <div className="navbar-content">
         {/* Content of the navbar */}
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
+        <ul className="Nav-items">
+          <li>About</li>
+          <li>Untamed Spots</li>
+          <li>Contact</li>
           {/* Add more links as needed */}
         </ul>
       </div>

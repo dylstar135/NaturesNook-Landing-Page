@@ -1,38 +1,56 @@
+/* NavBar.css */
 .navbar {
-  position: fixed;
-  top: 0;
-  right: -250px; /* Initially hidden outside the viewport */
-  width: 250px;
-  height: 100vh;
-  background-color: white;
-  transition: right 0.3s ease; /* Animation duration and easing */
-}
-
-.navbar.open {
-  right: 0; /* Slide into view when open */
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-}
-
-.navbar-content {
-  padding-top: 50px; /* Adjust as needed */
-}
-
-.navbar-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navbar-content ul li {
-  padding: 10px;
-  color: white;
-}
-
-/* Add additional styling as needed */
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initially hidden outside the viewport */
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(3, 43, 92, 0.5); /* Use rgba for opacity */
+    transition: right 0.3s ease; /* Animation duration and easing */
+  }
+  
+  .navbar.open {
+    right: 0; /* Slide into view when open */
+  }
+  
+  .navbar-toggle {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999; /* Ensure it's above other elements */
+  }
+  
+  .Nav-items {
+    font-family: "Libre Baskerville", serif;
+    color: white;
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 150%;
+  }
+  
+  .navbar-content ul {
+    list-style-type: none;
+    padding: 0;
+    display: none; /* Hide the list by default */
+  }
+  
+  .navbar.open .navbar-content ul {
+    display: block; /* Show the list when the navbar is open */
+    text-align: center;
+  }
+  
+  .navbar-content ul li {
+    padding: 10px;
+    color: white;
+    opacity: 1; /* Make list items fully visible */
+  }
+  
+  
