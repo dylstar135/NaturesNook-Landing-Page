@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css"; // Import your global styles
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import backgroundImage from "./assets/background.jpg"; // Import your background image
 import AboutUs from "./components/AboutUs";
